@@ -42,6 +42,8 @@
       </script>
 </head>
 <body class="bg-bg-color transition-colors duration-500 font-poppins py-6">
+
+  <!-- nav section- -->
     <nav class="flex justify-between items-center bg-white px-6 py-4 w-11/12 mx-auto rounded-2xl h-24">
         <div class="flex">
             <img class="h-8 w-8 mr-2" src="assets/logo.png" alt="">
@@ -56,10 +58,57 @@
             <button id="color-change" class="w-16 h-16 rounded-full bg-bg-color "> <img class="w-10 h-10 mx-auto my-auto" src="assets/theme-btn.png" alt=""></button>
         </div>
     </nav>
-    <main>
+
+<!-- main section- -->
+<main class="p-6 grid grid-cols-4 gap-4 w-11/12 mx-auto bg-white mt-5 rounded-2xl">
+  <div class="col-span-3">
+
+    <!-- main top section- -->
+      <div class="grid grid-cols-4 gap-4 h-32 mb-8">
+
+        <div class="bg-bg-color p-4 rounded-lg flex">
+          <div class="bg-white rounded-full p-4 my-auto mr-4">
+            <img class="my-auto mx-auto" src="assets/checkbox.png" alt="">
+        </div>
+
+          <p class="text-secondary-color my-auto text-sm font-medium">Task Assigned <span id="task-assigned" class="text-2xl font-bold">05</span></p>
+          
+        </div>
+          
+          <div class="flex bg-gradient-to-r from-primary-color via-[#6C7FFA] to-[#9BA8F8] text-white p-5 rounded-lg cursor-pointer col-span-2" id="redirect">
+            <img class="mr-6 my-auto" src="assets/board.png" alt="">
+            <p class="text-white my-auto text-2xl font-medium">Discover Something New Today!</p>
+          </div>
+
+          <div class="bg-bg-color p-4 rounded-lg flex">
+            <div class="bg-white rounded-full p-4 my-auto mr-4">
+              <img class="my-auto mx-auto" src="assets/calender.png" alt="">
+          </div>
+  
+            <p class="text-secondary-color my-auto text-sm font-medium">Wed, <span id="date" class="font-bold">Jul 28 2025</span></p>
+            
+          </div>
+        
+      </div>
+      <div class="mb-8">
+        <hr>
+      </div>
+      
 
 
-    </main>
+      <!-- main section 6-card- -->
+      <div class="grid grid-cols-3 gap-4">
+
+        <!-- card-1- -->
+
+      </div>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow">
+      <h3 class="font-bold">Activity Log</h3>
+      <button id="clear-history" class="bg-red-500 text-white px-3 py-1 rounded mt-2">Clear History</button>
+      <div id="activity-log" class="mt-2"></div>
+  </div>
+</main>
 
     <script src="javascript/javascript.js"></script>
   </body>
