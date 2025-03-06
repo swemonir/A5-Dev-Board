@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss -->
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+
+     <!-- font-family-Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        
+        .font-poppins{
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+    <!-- custom tailwind- -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#3752FD',
+                'secondary-color': '#00303C',
+                'bg-color': '#F4F7FF',
+              },
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-bg-color transition-colors duration-500 font-poppins py-6">
+    <nav class="flex justify-between items-center bg-white px-6 py-4 w-11/12 mx-auto rounded-2xl h-24">
+        <div class="flex">
+            <img class="h-8 w-8 mr-2" src="assets/logo.png" alt="">
+            <div class="text-2xl text-secondary-color">Dev<span class="font-bold">Board</span></div>
+        </div>
+        <div class="flex items-center gap-10">
+            <div class="flex bg-bg-color px-4 py-3 rounded-full">
+                <img class="w-6 h-6 mr-2 my-auto" src="assets/checkbox.png" alt="">
+                <span id="task-counter" class="text-black font-bold text-2xl">23</span>
+            </div>
+            
+            <button id="color-change" class="w-16 h-16 rounded-full bg-bg-color "> <img class="w-10 h-10 mx-auto my-auto" src="assets/theme-btn.png" alt=""></button>
+        </div>
+    </nav>
+    <main>
+
+
+    </main>
+
+    <script src="javascript/javascript.js"></script>
+  </body>
+  </html>
